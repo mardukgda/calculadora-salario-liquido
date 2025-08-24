@@ -11,7 +11,7 @@ import jakarta.ws.rs.core.Response;
 @ApplicationScoped
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
-@Path("/calcular-salario-liquido")
+@Path("/calculos/salario-liquido")
 public class SalarioLiquidoResource {
 
     private final SalarioLiquidoService salarioLiquidoService;
