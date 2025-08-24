@@ -54,17 +54,18 @@ public class SalarioLiquidoService {
                 .subtract(sindicato)
                 .subtract(valeTransporte);
 
-        SalarioLiquidoResponse response = new SalarioLiquidoResponse();
-        response.setSalarioBruto(salarioLiquidoRequest.getSalarioBruto());
-        response.setInss(retencaoINSS);
-        response.setDeducaoDependente(deducaoDependentes);
-        response.setPensaoAlimenticiaJudicial(deducaoPensaoAlimenticia);
-        response.setPrevidenciaPrivadaPGBL(previdenciaPrivadaPGBL);
-        response.setImpostoDeRenda(retencaoIRRF);
-        response.setPlanoDeSaude(planoDeSaude);
-        response.setSindicato(sindicato);
-        response.setValeTransporte(valeTransporte);
-        response.setSalarioLiquido(salarioLiquido);
+        SalarioLiquidoResponse response = new SalarioLiquidoResponse(
+                salarioLiquidoRequest.getSalarioBruto(),
+                retencaoINSS,
+                deducaoDependentes,
+                deducaoPensaoAlimenticia,
+                previdenciaPrivadaPGBL,
+                retencaoIRRF,
+                planoDeSaude,
+                sindicato,
+                valeTransporte,
+                salarioLiquido
+        );
 
         return response;
     }
