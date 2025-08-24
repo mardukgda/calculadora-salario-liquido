@@ -6,9 +6,11 @@ import calculadorasalarioliquido.service.retencao.abateIRRF.PrevidenciaPrivadaPG
 import calculadorasalarioliquido.service.retencao.naoAbateIRRF.PlanoDeSaude;
 import calculadorasalarioliquido.service.retencao.naoAbateIRRF.Sindicato;
 import calculadorasalarioliquido.service.retencao.naoAbateIRRF.ValeTransporte;
+import io.quarkus.runtime.annotations.RegisterForReflection;
 
 import java.math.BigDecimal;
 
+@RegisterForReflection
 public class SalarioLiquidoRequest {
 
     private BigDecimal salarioBruto;

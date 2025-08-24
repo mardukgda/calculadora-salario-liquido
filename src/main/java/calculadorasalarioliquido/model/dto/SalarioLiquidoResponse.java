@@ -1,7 +1,10 @@
 package calculadorasalarioliquido.model.dto;
 
+import io.quarkus.runtime.annotations.RegisterForReflection;
+
 import java.math.BigDecimal;
 
+@RegisterForReflection
 public class SalarioLiquidoResponse {
         private BigDecimal salarioBruto;
         private BigDecimal inss;
