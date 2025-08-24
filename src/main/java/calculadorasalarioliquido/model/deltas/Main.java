@@ -7,8 +7,6 @@ import java.nio.file.Path;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.jboss.resteasy.reactive.server.core.parameters.MultipartFormParamExtractor.Type.InputStream;
-
 public class Main {
 
     public static void main(String[] args) {
