@@ -19,6 +19,9 @@ public class SalarioLiquidoRequest {
     private Sindicato sindicato;
     private ValeTransporte valeTransporte;
 
+    public SalarioLiquidoRequest() {
+    }
+
     public BigDecimal getSalarioBruto() {
         return salarioBruto;
     }
